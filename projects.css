@@ -1,0 +1,200 @@
+.projects{
+    font-weight: 700;
+    text-shadow: 0px 0px 5px #DFF6E9;
+}
+
+main{
+    padding: 0 80px;
+}
+
+h1{
+    font-size: clamp(1rem, 2.5rem, 3rem);
+    margin-top: 80px;
+}
+
+h2{
+    font-size: clamp(2vw, 2rem, 4vw);
+    margin-bottom: 40px;
+}
+
+p{
+    font-size: clamp(1rem, 1.25rem, 1.5rem);
+    line-height: clamp(30px, 38px, 40px);
+}
+
+.project{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 80px 0;
+}
+
+.project a{
+    text-decoration: underline;
+}
+
+.project img{
+    border-radius: 24px;
+}
+
+.projects:hover{
+    font-weight: 700;
+    text-shadow: 0px 0px 5px #DFF6E9;
+    color: #DFF6E9;
+}
+
+.projects:active{
+    text-shadow: 0px 0px 5px #DFF6E9;
+}
+
+/*Responsiveness*/
+
+@media screen and (max-width: 1240px) {
+    .project img{
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 1086px){
+    h2{
+        font-size: clamp(1vw, 1.5rem, 3vw);
+    }
+    p{
+        font-size: clamp(.5rem, 1rem, 1.2rem);
+        line-height: clamp(30px, 38px, 40px);
+    }
+}
+
+@media screen and (max-width: 998px){
+    .project img{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 902px) {
+    h1{
+        font-size: clamp(1rem, 2rem, 3rem);
+    }
+    h2{
+        margin-bottom: 24px;
+    }
+    p{
+        font-size: clamp(.4rem, .9rem, 1rem);
+        line-height: clamp(20px, 30px, 35px);
+    }
+    
+}
+
+@media screen and (max-width: 864px) {
+    .project img{
+        width: 350px;
+    }
+}
+
+@media screen and (max-width: 810px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1{
+        font-size: clamp(1rem, 2.5rem, 3rem);
+    }
+
+    .project{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        width: 80%;
+        box-shadow: 0 0 15px #DFF6E9;
+        border-radius: 24px;
+    }
+
+    .project img{
+        width: 100%;
+        border-radius: 24px 24px 0 0;
+    }
+
+    .description{
+        padding: 40px;
+        width: 100%;
+    }
+
+    h2{
+        font-size: clamp(2vw, 2rem, 4vw);
+        margin-bottom: 40px;
+    }
+    
+    p{
+        font-size: clamp(1rem, 1.25rem, 1.5rem);
+        line-height: clamp(30px, 38px, 40px);
+    }
+}
+
+@media screen and (max-width: 770px) {
+    p{
+        font-size: clamp(.5rem, 1rem, 1.5rem);
+        line-height: clamp(20px, 30px, 35px);
+    }
+}
+
+@media screen and (max-width: 668px){
+    .project{
+        width: 100%;
+    }
+
+    h1{
+        font-size: clamp(1rem, 2rem, 3rem);
+        align-self: flex-start;
+    }
+
+    p{
+        font-size: clamp(1rem, 1.25rem, 1.5rem);
+        line-height: clamp(30px, 38px, 40px);
+    }
+}
+
+@media screen and (max-width: 625px){
+    p{
+        font-size: clamp(.5rem, 1rem, 1.5rem);
+        line-height: clamp(20px, 30px, 35px);
+    }
+}
+
+@media screen and (max-width: 566px){
+    .description{
+        padding: 24px;
+    }
+}
+
+@media screen and (max-width: 534px) {
+    main{
+        padding: 40px;
+    }
+
+    p{
+        font-size: clamp(1rem, 1.2rem, 1.5rem);
+        line-height: clamp(30px, 38px, 40px);
+    }
+
+}
+
+@media screen and (max-width: 519px) {
+    main{
+        padding: 24px;
+    }
+}
+
+@media screen and (max-width: 487px){
+    p{
+        font-size: clamp(.5rem, 1rem, 1.5rem);
+        line-height: clamp(20px, 30px, 35px);
+    }
+}
+
+@media screen and (max-width: 422px){
+    p{
+        font-size: clamp(.5rem, .8rem, 1rem);
+        line-height: clamp(20px, 25px, 30px);
+    }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo.svg" alt="Victor Logo">
+            </a>
+        </div>
+        <nav class="nav">
+            <ul class="links">
+                <li class="about"><a href="about.html">About</a></li>
+                <li class="projects"><a href="projects.html">Projects</a></li>
+                <li class="contact"><a href="contact.html" class="contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form name="contact" method="POST" data-netlify="true">
+            <h1>Let's get in touch</h1>
+            <input placeholder= "Full Name"type="text" name="Name" id="name" required autocomplete="off">
+            <input placeholder="Email" type="email" name="Email" id="email" required autocomplete="off">
+            <textarea placeholder="Message" name="Message" id="message" cols="30" rows="10"></textarea>
+            <button>Send Message</button>
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li><i class="bi bi-geo-alt"></i>Carabobo - Venezuela</li>
+            <li><i class="bi bi-phone"></i>+58-414-4175655</li>
+            <li><i class="bi bi-envelope"></i>victoralejandrost881@gmail.com</li>
+        </ul>
+    </footer>
+</body>
+</html>

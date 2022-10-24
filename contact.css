@@ -1,0 +1,95 @@
+.contact{
+    font-weight: 700;
+    text-shadow: 0px 0px 5px #DFF6E9;
+}
+
+form{
+    margin: 0 auto;
+    border: 2px solid #DFF6E9;
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    min-width: 300px;
+    padding: 40px;
+    border-radius: 24px;
+}
+
+h1{
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+input, textarea, button{
+    background-color: unset;
+    border: 2px solid #DFF6E9;
+    margin: 8px 0;
+    padding: 16px 24px;
+    border-radius: 12px;
+}
+
+input{
+    height: 52px;
+}
+
+textarea{
+    height: 136px;
+    resize: none;
+}
+textarea::-webkit-scrollbar{
+    display: none;
+}
+button{
+    height: 64px;
+    font-size: 20px;
+    font-weight: 700;
+    transition: .5s;
+    cursor: pointer;
+}
+
+input::placeholder, textarea::placeholder{
+    font-weight: 700;
+    color: rgba(223, 246, 233, 0.7);
+}
+
+.contact:hover{
+    font-weight: 700;
+    text-shadow: 0px 0px 5px #DFF6E9;
+    color: #DFF6E9;
+}
+
+button:hover{
+    background-color: #DFF6E9;
+    border: unset;
+    color: #020805;
+    box-shadow: 0 0 15px #DFF6E9;
+}
+
+button:active{
+    background-color: #092A17;
+    color: #8EE1B2;
+    box-shadow: unset;
+    transition: unset;
+}
+
+/*Responsiveness*/
+
+@media screen and (min-width: 320px) {
+    form{
+        padding: 24px 16px;
+    }
+    h1, button{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    h1, button{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 858px){
+    h1,button{
+        font-size: clamp(20px, 24px, 26px);
+    }
+}
