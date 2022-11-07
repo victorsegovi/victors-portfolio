@@ -27,7 +27,7 @@ body{
     position: absolute;
     width: 336px;
     height: 336px;
-    background: #DFF6E9;
+    background-color: rgb(233, 246, 233);
     filter: blur(50px);
     border-radius: 100%;
 }
