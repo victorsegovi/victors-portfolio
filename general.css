@@ -76,6 +76,11 @@ a:active{
     text-shadow: unset;
 }
 
+.nav i{
+    display: none;
+}
+
+
 /*Responsiveness*/
 
 @media screen and (max-width: 1200px) {
@@ -85,7 +90,56 @@ a:active{
 }
 
 @media screen and (max-width: 734px) {
+    .header{
+        justify-content: space-between;
+    }
+
     
+    .nav{
+        margin: unset;
+        display: unset;
+        align-items: unset;
+    }
+
+    nav ul{
+        display: block;
+    }
+
+    .nav i{
+        font-size: 40px;
+        color: #8EE1B2;
+        text-shadow: -3px 3px 3px #020805;
+        position: relative;
+    }
+
+    #bars{
+        display: block;
+    }
+
+    #close{
+        display: none;
+    }
+
+    #links{
+        position: absolute;
+        left: 0;
+        top: 70%;
+        width: 100vw;
+        text-align: center;
+        top: 10;
+        background-color: #020805;
+    }
+
+    .nav ul{
+        display: none;
+    }
+
+    #links li{
+        margin: 0;
+        padding: 32px;
+        display: block;
+    }
+
     footer ul{
         display: flex;
         flex-direction: column;
@@ -97,9 +151,7 @@ a:active{
     footer li{
         margin: 12px 0;
     }
-}
 
-@media screen and (max-width: 676px) {
     .nav li{
         font-size: 14px;
         margin: 24px;
@@ -109,6 +161,10 @@ a:active{
 @media screen and (max-width: 578px){
     .nav li{
         margin: 16px;
+    }
+
+    .nav i{
+        font-size: 32px;
     }
 
     .logo img{
